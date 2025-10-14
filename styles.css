@@ -244,3 +244,68 @@ div.card div.card-icons {
   gap: 1rem;
   margin-top: auto;
 }
+
+.your-projects-text,
+.announcements-text,
+.trending-text {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.announcements-section {
+  background-color: white;
+  padding: 0 1rem;
+  min-width: 200px;
+  border-radius: 0.5rem;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  box-shadow: 0px 2px 5px 0px rgba(133, 133, 133, 0.658);
+}
+
+.underline {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+div.announcements-section-card {
+  padding: 1rem 0;
+}
+
+div.announcements-section-card p.title {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+div.announcements-section-card p.body {
+  font-size: 0.5rem;
+  color: rgba(0, 0, 0, 0.637);
+}
+
+div.trending-section {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: white;
+  padding: 1rem;
+  min-width: 200px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 5px 0px rgba(133, 133, 133, 0.658);
+}
+
+div.trending-section-user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trending-section-user .profile-icon {
+  font-size: 2.2rem;
+}
+
+.trending-section-user .small-text {
+  font-size: 0.75rem;
+}
+
+.trending-section-user .light-text {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.637);
+}
