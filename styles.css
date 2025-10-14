@@ -73,11 +73,71 @@ h6 {
   background-color: blue;
   grid-column: 1;
   grid-row: 1 / -1;
+  display: grid;
+  gap: 1.5rem;
+  color: white;
+  grid-template-rows: repeat(3, min-content);
+  padding: 1rem;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1;
+}
+
+ul {
+  list-style-type: none;
+}
+
+div.logo,
+div.navigation-menu-item,
+div.branding-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+div.navigation-menu-item,
+div.branding-menu-item {
+  margin-bottom: 0.8rem;
+}
+
+div.logo {
+  font-size: 1.3rem;
+}
+
+span.logo-svg {
+  font-size: 2rem;
 }
 
 .header {
   background-color: white;
   grid-column: 2 / -1;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.header-top {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.header-bottom-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-bottom-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .main-content {

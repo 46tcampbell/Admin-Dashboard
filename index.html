@@ -4,12 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="container">
-      <div class="header">Header</div>
-      <div class="sidebar">Sidebar</div>
+      <div class="header">
+        <div class="header-top">
+          <div class="header-top-left">
+            <span class="material-symbols-outlined"> search </span>
+            <input type="search" />
+          </div>
+          <div class="header-top-right">
+            <span class="material-symbols-outlined">
+              notifications_active
+            </span>
+            <span class="material-symbols-outlined"> account_circle </span>
+            <span>Morgan Oakley</span>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="header-bottom-left">
+            <span class="material-symbols-outlined"> account_circle </span>
+            <div>
+              <div>Hi there,</div>
+              <div>Morgan Oakley (@morgan)</div>
+            </div>
+          </div>
+          <div class="header-bottom-right">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="logo">
+          <span class="material-symbols-outlined logo-svg"> dashboard </span>
+          Dashboard
+        </div>
+        <div class="navigation-menu">
+          <ul>
+            <div class="navigation-menu-item">
+              <span class="material-symbols-outlined"> home </span>
+              <li>Home</li>
+            </div>
+            <div class="navigation-menu-item">
+              <span class="material-symbols-outlined"> account_box </span>
+              <li>Profile</li>
+            </div>
+            <div class="navigation-menu-item">
+              <span class="material-symbols-outlined"> chat_bubble </span>
+              <li>Messages</li>
+            </div>
+            <div class="navigation-menu-item">
+              <span class="material-symbols-outlined"> history </span>
+              <li>History</li>
+            </div>
+            <div class="navigation-menu-item">
+              <span class="material-symbols-outlined"> assignment </span>
+              <li>Tasks</li>
+            </div>
+            <div class="navigation-menu-item">
+              <span class="material-symbols-outlined"> diversity_3 </span>
+              <li>Communities</li>
+            </div>
+          </ul>
+        </div>
+        <div class="branding-menu">
+          <ul>
+            <div class="branding-menu-item">
+              <span class="material-symbols-outlined"> settings </span>
+              <li>Settings</li>
+            </div>
+            <div class="branding-menu-item">
+              <span class="material-symbols-outlined"> contact_support </span>
+              <li>Support</li>
+            </div>
+            <div class="branding-menu-item">
+              <span class="material-symbols-outlined"> shield_lock </span>
+              <li>Privacy</li>
+            </div>
+          </ul>
+        </div>
+      </div>
       <div class="main-content">Main-Content</div>
     </div>
   </body>
