@@ -62,6 +62,13 @@ h6 {
 
 /* End of CSS Reset */
 
+:root {
+  --main-blue-bg: #3091ffdc;
+  --main-white-bg: whitesmoke;
+  --main-box-shadow: 0px 2px 5px 0px rgba(133, 133, 133, 0.658);
+  --light-text-color: rgba(0, 0, 0, 0.637);
+}
+
 body {
   font-family: system-ui, Roboto, sans-serif;
 }
@@ -69,17 +76,16 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr;
-  /* height: 100vh; */
+  grid-template-rows: 0.5fr 2fr 2fr;
 }
 
 .sidebar {
-  background-color: blue;
+  background-color: var(--main-blue-bg);
   grid-column: 1;
   grid-row: 1 / -1;
   display: grid;
   gap: 1.5rem;
-  color: white;
+  color: var(--main-white-bg);
   grid-template-rows: repeat(3, min-content);
   padding: 1rem;
   font-weight: bold;
@@ -115,13 +121,13 @@ span.logo-svg {
 }
 
 .header {
-  background-color: white;
+  background-color: var(--main-white-bg);
   grid-column: 2 / -1;
   display: grid;
   /* grid-template-rows: 1fr 2fr; */
   padding: 1rem 2rem;
   gap: 1rem;
-  box-shadow: 0px 0px 10px 0px rgba(133, 133, 133, 0.658);
+  box-shadow: var(--main-box-shadow);
 }
 
 .header-top {
@@ -194,8 +200,8 @@ span.logo-svg {
   padding: 0.5rem 1rem;
   flex: 1;
   border: none;
-  background-color: blue;
-  color: white;
+  background-color: var(--main-blue-bg);
+  color: var(--main-white-bg);
   font-weight: bold;
 }
 
@@ -225,12 +231,12 @@ div.card {
   height: 200px;
   /* border: 1px solid red; */
   padding: 1rem;
-  background-color: white;
+  background-color: var(--main-white-bg);
   border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   border-left: 10px solid #fab700;
-  box-shadow: 0px 2px 5px 0px rgba(133, 133, 133, 0.658);
+  box-shadow: var(--main-box-shadow);
 }
 
 div.card p.title {
@@ -239,7 +245,7 @@ div.card p.title {
 
 div.card p.body {
   font-size: 0.7rem;
-  color: rgba(0, 0, 0, 0.637);
+  color: var(--light-text-color);
 }
 
 div.card div.card-icons {
@@ -257,13 +263,13 @@ div.card div.card-icons {
 }
 
 .announcements-section {
-  background-color: white;
+  background-color: var(--main-white-bg);
   padding: 0 1rem;
   min-width: 200px;
   border-radius: 0.5rem;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  box-shadow: 0px 2px 5px 0px rgba(133, 133, 133, 0.658);
+  box-shadow: var(--main-box-shadow);
 }
 
 .underline {
@@ -281,18 +287,18 @@ div.announcements-section-card p.title {
 
 div.announcements-section-card p.body {
   font-size: 0.5rem;
-  color: rgba(0, 0, 0, 0.637);
+  color: var(--light-text-color);
 }
 
 div.trending-section {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   gap: 1rem;
-  background-color: white;
+  background-color: var(--main-white-bg);
   padding: 1rem;
   min-width: 200px;
   border-radius: 0.5rem;
-  box-shadow: 0px 2px 5px 0px rgba(133, 133, 133, 0.658);
+  box-shadow: var(--main-box-shadow);
 }
 
 div.trending-section-user {
@@ -311,5 +317,5 @@ div.trending-section-user {
 
 .trending-section-user .light-text {
   font-size: 0.75rem;
-  color: rgba(0, 0, 0, 0.637);
+  color: var(--light-text-color);
 }
